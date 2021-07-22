@@ -1,0 +1,79 @@
+.profile-photo {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.profile-photo img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+}
+.profile-fields__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.profile-fields__list li {
+  margin: 0;
+  padding: 0;
+}
+
+.profile-fields__list li::before {
+  display: inline-block;
+  content: "\2014";
+  padding: 0px 8px 0px 16px;
+}
+.animated-border {
+  position: relative;
+}
+.animated-border::after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 10%;
+  height: 2px;
+  background: #649a9e;
+  -webkit-animation: expandWidth 0.3s;
+  animation: expandTinyWidth 0.3s;
+}
+.animated-border::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 90%;
+  height: 2px;
+  border-radius: 4px;
+  background: #3f888f;
+  background: linear-gradient(to right, #649a9e, #3f888f, #204247);
+  animation: expandRestWidth 0.3s;
+}
+
+.accent-color {
+  color: #3f888f;
+}
+
+@keyframes expandTinyWidth {
+  from {
+    width: 0;
+  }
+  to {
+    width: 10%;
+  }
+}
+
+@keyframes expandRestWidth {
+  from {
+    width: 0;
+  }
+  to {
+    width: 90%;
+  }
+}

@@ -1,14 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta name="description" content="Webpage description goes here" />
+    <meta name="description" content="Фронтэнд-разработчик резюме" />
     <meta charset="utf-8" />
-    <title>Change_me</title>
+    <title>Дарья Маркова резюме</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="author" content="" />
+    <meta name="author" content="Дарья Маркова" />
+    <link rel="stylesheet" href="styles/bootstrap.min.css" />
+    <link rel="stylesheet" href="styles/style.css" />
   </head>
 
   <body>
-    <h1>My resume will be here</h1>
+    <div class="container profile mx-auto mt-4">
+      <div class="d-flex">
+        <div class="profile-photo">
+          <img src="assets/me.jpeg" />
+        </div>
+        <div class="profile-position mt-2 ms-3">
+          <h4 class="fw-light">Дарья Маркова</h4>
+          <h6 class="fw-light">Frontend-разработчик | Web-мастер</h6>
+        </div>
+      </div>
+      <div class="mt-2">
+        <span
+          style="width: fit-content ps-2"
+          class="d-inline-block accent-color fw-normal mt-2"
+        >
+          Общая информация
+        </span>
+        <div class="w-100 animated-border"></div>
+        <small class="d-block mt-2 fw-light"
+          >Разработчик программного обеспечения в области web-технологий
+        </small>
+        <small class="fw-light"> Сферы профессиональных интересов: </small>
+        <ul class="profile-fields__list fw-light mt-0">
+          <li>
+            <small
+              >Алгоритмы и структуры данных и их применение во
+              Frontend-разработке</small
+            >
+          </li>
+          <li>
+            <small
+              >Работа с картами (OpenLayers, Yandex Maps, Google Maps)</small
+            >
+          </li>
+          <li><small>&nbsp;Разработка SPA-приложений</small></li>
+          <li><small>&nbsp;Верстка и веб-дизайн</small></li>
+        </ul>
+      </div>
+    </div>
   </body>
 </html>
