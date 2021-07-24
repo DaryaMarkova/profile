@@ -1,3 +1,23 @@
+@font-face {
+  font-family: "Roboto-Medium";
+  src: url("../fonts/Roboto/Roboto-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("../fonts/Roboto/Roboto-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto-Light";
+  src: url("../fonts/Roboto/Roboto-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto-Thin";
+  src: url("../fonts/Roboto/Roboto-Thin.ttf") format("truetype");
+}
+
 .profile-photo {
   position: relative;
   width: 100px;
@@ -14,21 +34,26 @@
   left: 0px;
   z-index: -1;
 }
-.profile-fields__list {
+
+ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
-.profile-fields__list li {
-  margin: 0;
-  padding: 0;
+
+.profile__list li {
+  position: relative;
+  padding-left: 32px;
+  padding: 0px 0px 0px 32px;
 }
 
-.profile-fields__list li::before {
-  display: inline-block;
+.profile__list li::before {
+  position: absolute;
+  display: inline;
   content: "\2014";
-  padding: 0px 8px 0px 16px;
+  left: 8px;
 }
+
 .animated-border {
   position: relative;
 }
@@ -38,8 +63,7 @@
   top: 0px;
   left: 0px;
   width: 10%;
-  height: 2px;
-  background: #649a9e;
+  height: 1px;
   -webkit-animation: expandWidth 0.3s;
   animation: expandTinyWidth 0.3s;
 }
@@ -49,10 +73,9 @@
   top: 0px;
   right: 0px;
   width: 90%;
-  height: 2px;
+  height: 1px;
   border-radius: 4px;
-  background: #3f888f;
-  background: linear-gradient(to right, #649a9e, #3f888f, #204247);
+  background: #649a9e;
   animation: expandRestWidth 0.3s;
 }
 
